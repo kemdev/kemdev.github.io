@@ -38,10 +38,15 @@ const NavbarComp = () => {
             <Image src="/img/logo.svg" alt="logo" width={150} height={150} />
           </a>
         </Link>
-          <div style={{ opacity: scrolled ? 0 : 1 ,transition: 'opacity 0.3s ease-in'}}>
-            <p className="m-0 fs-6">Abdulkarim Alarmanazi</p>
-            <p className="m-0 fs-6">Fullstack Web Developer</p>
-          </div>
+        <div
+          style={{
+            opacity: scrolled ? 0 : 1,
+            transition: "opacity 0.3s ease-in",
+          }}
+        >
+          <p className="m-0 fs-6">Abdulkarim Alarmanazi</p>
+          <p className="m-0 fs-6">Fullstack Web Developer</p>
+        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
@@ -80,16 +85,21 @@ const NavbarComp = () => {
               <a
                 href="https://www.linkedin.com/in/abdulkarim-alarmanazi/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <LinkedInIcon className="icons" fontSize="large" />
               </a>
-              <a href="https://github.com/kemdev" target="_blank">
+              <a
+                href="https://github.com/kemdev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GitHubIcon className="icons" fontSize="large" />
               </a>
             </div>
             <Link href="#contact">
               <button className="vvd" onClick={() => console.log("connect")}>
-                <span>Let's Connect</span>
+                <span>Let&apos;s Connect</span>
               </button>
             </Link>
           </span>

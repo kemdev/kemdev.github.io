@@ -1,4 +1,5 @@
 import Carousel from "react-multi-carousel";
+import Image from 'next/image'
 
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -73,10 +74,11 @@ const Skills = ({ data }) => {
           </Col>
         </Row>
       </Container>
-      <img
+      <Image
         className="background-image-left"
-        src="img/color-sharp.png"
+        src="/img/color-sharp.png"
         alt="Image"
+        layout='fill'
       />
     </section>
   );

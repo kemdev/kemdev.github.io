@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import Image from 'next/image'
 
 import ProjectContainer from "./ProjectContainer";
 
@@ -63,9 +64,11 @@ export default function Project({
           </Col>
         </Row>
       </Container>
-      <img
+      <Image
         src="/img/color-sharp2.png"
         alt=""
+        width="100%"
+        height="100%"
         className="background-image-right"
       />
     </section>

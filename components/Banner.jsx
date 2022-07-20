@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Image from "next/image";
+
+import headerImage from '../public/img/header-img.svg';
 
 // react bootstrap icons
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -54,22 +57,32 @@ export default function Banner() {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline user-select-none">Welcome to my Portfolio</span>
+            <span className="tagline user-select-none">
+              Welcome to my Portfolio
+            </span>
             <h1>
               {`Hi I'm Kareem `}
               <span className="wrap txt-rotate">{text}</span>
             </h1>
             <button onClick={() => console.log("connect")}>
-              Let's Connect <ArrowRightCircle size={25} />
+              Let&apos;s Connect <ArrowRightCircle size={25} />
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{type: "spring", stiffness: 100}}
+              transition={{ type: "spring", stiffness: 100 }}
             >
-              <img src="/img/header-img.svg" alt="Header img" />
+              <Image
+                src={headerImage}
+                alt="Header img"
+                // width="100%"
+                // height="100%"
+                // layout="responsive"
+                // objectFit="contain"
+                className="header-img"
+              />
             </motion.div>
           </Col>
         </Row>

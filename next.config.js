@@ -1,5 +1,6 @@
 module.exports = {
-  reactStrictMode: true,
+  reactStrictMode: false,
+  distDir: 'src/out',
   images: {
     domains: ['static1.makeuseofimages.com'],
   },

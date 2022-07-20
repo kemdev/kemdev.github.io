@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Contact() {
@@ -69,22 +69,26 @@ export default function Contact() {
     setIsHide(false);
   };
 
-
   useEffect(() => {
     if (validation === true) {
-        setIsHide(true);
-        setButtonText("Sending...");
-        handleSubmit(formDetails);
-      }
+      setIsHide(true);
+      setButtonText("Sending...");
+      handleSubmit(formDetails);
+    }
   }, [validation]);
-  
 
   return (
     <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6}>
-            <img src="/img/contact-img.svg" alt="Contact me" />
+            <Image
+              src="/img/contact-img.svg"
+              alt="Contact me"
+              width="100%"
+              height="100%"
+              layout="responsive"
+            />
           </Col>
           <Col
             xs={12}
