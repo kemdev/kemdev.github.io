@@ -8,7 +8,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && git add src && git commit -m \"Deploy gh-pages\" && git subtree push --prefix src origin gh-pages"
+    "deploy": "next build && next export && git add src && git commit -m \"Deploy gh-pages\" && git  push  src origin main"
 
   },
   "dependencies": {
