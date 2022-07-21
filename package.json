@@ -1,6 +1,7 @@
 {
   "name": "portfolio-youtube",
   "private": true,
+  "homepage": "kemdev.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
