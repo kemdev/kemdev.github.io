@@ -4,7 +4,7 @@
   "homepage": "https://alarmanazi.me/",
   "scripts": {
     "dev": "next dev",
-    "build": "mkdir out && next build",
+    "build": "next build",
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
