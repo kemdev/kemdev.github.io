@@ -1,0 +1,51 @@
+[
+  {
+    "id": 14,
+    "name": "Customer Satisfaction Dashboard",
+    "description": "Customer Satisfaction Dashboard",
+    "url": "UIB-layout-customer-satisfaction-dashboard/",
+    "image": "/img/screenshots/customerSatisfaction.webp"
+},
+  {
+    "id": 15,
+    "name": "Glassmorphic",
+    "description": "Glassmorphic Effect",
+    "url": "UIB-UI-UX-glassmorphic-profile-card",
+    "image": "/img/generlaImg/glassmorphic.webp"
+  },
+  {
+    "id": 16,
+    "name": "Accessibility",
+    "description": "Landing Page with Accessibility Features",
+    "url": "UIB-box-model-make-it-accessible/",
+    "image": "/img/generlaImg/accessibility.webp"
+  },
+  {
+    "id": 17,
+    "name": "Profile Card Rick",
+    "description": "Profile Card Rick Sanchez",
+    "url": "UIB-box-model-profile-card",
+    "image": "/img/generlaImg/profileCard.webp"
+  },
+  {
+    "id": 18,
+    "name": "Form Styling",
+    "description": "El Amigo From Styling",
+    "url": "UIB-data-stylingforms/",
+    "image": "/img/generlaImg/stylingForm.webp"
+  },
+  {
+    "id": 19,
+    "name": "Interaction Secret Unfolds",
+    "description": "Interaction Secret Unfolds",
+    "url": "UIB-interaction-secret-unfolds/",
+    "image": "/img/generlaImg/interactionSecretUnfolds.webp"
+  },
+  {
+    "id": 20,
+    "name": "Freelance Position",
+    "description": "Freelance Position Landing Page",
+    "url": "UIB-layout-freelance-position",
+    "image": "/img/generlaImg/freelancePosition.webp"
+  }
+]

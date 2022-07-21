@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "name": "Frontend Development",
+        "value": 80,
+        "text": "Advanced"
+    },
+    {
+        "id": 1,
+        "name": "Backend Development",
+        "value": 20,
+        "text": "Basic"
+    },
+    {
+        "id": 2,
+        "name": "React",
+        "value": 80,
+        "text": "Advanced"
+    },
+    {
+        "id": 3,
+        "name": "HTML/CSS",
+        "value": 90,
+        "text": "Advanced"
+    },
+    {
+        "id": 4,
+        "name": "JavaScript",
+        "value": 70,
+        "text": "Advanced"
+    },
+    {
+        "id": 4,
+        "name": "Python",
+        "value": 20,
+        "text": "Basic"
+    },
+    {
+        "id": 5,
+        "name": "Node.js",
+        "value": 50,
+        "text": "medium"
+    },
+    {
+        "id": 6,
+        "name": "Three.js",
+        "value": 25,
+        "text": "Basic"
+    }
+]   

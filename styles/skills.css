@@ -1,0 +1,70 @@
+/* Skills */
+
+.skill{
+    /* padding: 0 0 50px 0; */
+    position: relative;
+}
+
+
+.skill-bx{
+    background: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -10rem;
+}
+
+.skill h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.skill p{
+    color: #B8B8B8;
+    font-weight: 18px;
+    letter-spacing:    0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+
+.skill-slider{
+    /* width: 80%; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.test{
+    width: 350px !important;
+    text-align: -webkit-center;
+}
+
+.ant-progress-text{
+    font-size: smaller;
+}
+
+
+
+.background-image-left{
+    top: 20%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -2;
+}
+
+
+/* .testSvg{
+
+   padding: 40px;
+} */
+
+
+.testSvg > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testSvg  .ant-progress-text{
+    position: absolute;
+}

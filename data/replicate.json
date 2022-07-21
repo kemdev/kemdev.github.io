@@ -1,0 +1,23 @@
+[
+    {
+        "id": 21,
+        "name": "codepen/",
+        "description": "Replicate of codepen/",
+        "url": "dupplicatingWebsite/codepen/",
+        "image": "/img/generlaImg/codepen.webp"
+    },
+    {
+        "id": 22,
+        "name": "ibotani Replicate",
+        "description": " Replicate the website ibotani.com",
+        "url": "dupplicatingWebsite/exer-2-ibotani.com/",
+        "image": "/img/generlaImg/ibotani.webp"
+    },
+    {
+        "id": 23,
+        "name": "Twitter",
+        "description": "Replicate Twitter",
+        "url": "dupplicatingWebsite/twitter/",
+        "image": "/img/generlaImg/twitter.webp"
+    }
+]
