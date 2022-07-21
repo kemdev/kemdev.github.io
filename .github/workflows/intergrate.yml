@@ -27,7 +27,7 @@ jobs:
             CI: true
 
         # - name: Deploy to GitHub Pages
-      #   uses: JamesIves/github-pages-deploy-action@3.6.2
+      #   uses: JamesIves/github-pages-deploy-action@3.6.2 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
