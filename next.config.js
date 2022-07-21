@@ -3,8 +3,9 @@ const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
   reactStrictMode: false,
   assetPrefix: isProd ? 'kemdev.github.io' : '',
-  distDir: 'src',
+  // distDir: 'src',
   images: {
+    unoptimized: true,
     domains: ['static1.makeuseofimages.com'],
   },
 }
