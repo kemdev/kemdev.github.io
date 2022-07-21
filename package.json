@@ -8,8 +8,8 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "static": "next build && next export && touch ./out/.nojekyll && echo 'alarmanazi.me' > ./out/CNAME"
-
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'alarmanazi.me' > ./out/CNAME",
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "@emotion/cache": "^11.9.3",
