@@ -10,7 +10,9 @@ import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-import SSRProvider from "react-bootstrap/SSRProvider";
+import ScrollToTop from "react-scroll-to-top";
+
+import logo from "../public/img/backToTop.svg";
 
 export default function Home() {
   const [skillsData, setSkillsData] = useState([]);
@@ -53,6 +55,11 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <ScrollToTop
+        smooth
+        component={<Image src={logo} layout='responsive' />}
+        style={{ background: "#151515",  width: "5rem", height: "5rem" }}
+      />
       <Head>
         <title>Abdulkarim Alarmanazi</title>
         <meta name="description" content="Abdulkarim Alarmanazi's portfolio" />

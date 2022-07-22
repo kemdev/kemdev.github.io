@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
-import headerImage from '../public/img/header-img.svg';
+import headerImage from "../public/img/header-img.svg";
 
 // react bootstrap icons
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -64,9 +65,11 @@ export default function Banner() {
               {`Hi I'm Kareem `}
               <span className="wrap txt-rotate">{text}</span>
             </h1>
-            <button onClick={() => console.log("connect")}>
-              Let&apos;s Connect <ArrowRightCircle size={25} />
-            </button>
+            <Link href="#contact">
+              <button>
+                Let&apos;s Connect <ArrowRightCircle size={25} />
+              </button>
+            </Link>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <motion.div

@@ -1,8 +1,10 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-// import Image from "next/image";
+import Image from "next/image";
 
 import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+
+import loadingIMage from '../public/img/Running_heart.gif'
 
 export default function ProjectsCard({
   name,
@@ -23,21 +25,25 @@ export default function ProjectsCard({
       <motion.div
         className="col-md-6 col-lg-4"
         initial={{ opacity: 0, scale: 0 }}
-        whileFocus={{ opacity: 1, scale: 1 }}
-        // whileInView={{ opacity: 1, scale: 1 }}
-        animate={{ opacity: 1, scale: 1 }}
+        // whileFocus={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        // animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
         transition={{
           type: "spring",
-          stiffness: 200,
-          delay: index * 0.2,
+          stiffness: 100,
+          delay: index * 0.1,
         }}
       >
         <div className={`proj-imgbx`}>
-          <img
+          <Image
             src={image}
             alt={name}
+            placeholder="blur"
+            blurDataURL={loadingIMage}
             style={{ width: "100%", height: "100%" }}
+            width= "100%" height= "60%"
+            layout="responsive"
           />
           <div className="proj-txtx">
             <h4>{name}</h4>

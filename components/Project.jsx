@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
-import Image from 'next/image'
+import Image from "next/image";
 
 import ProjectContainer from "./ProjectContainer";
 
@@ -22,7 +22,11 @@ export default function Project({
               vanilla html, css, and some javascript. Some of the projects are
               using React, React-Bootstrap, and Framer-Motion.
             </p>
-            <Tab.Container id="projects-tabs" defaultActiveKey="collaborated"  transition={false}>
+            <Tab.Container
+              id="projects-tabs"
+              defaultActiveKey="collaborated"
+              transition={false}
+            >
               <Nav
                 variant="pills"
                 className="nav-pills mb-5 justify-content-center align-items-center"

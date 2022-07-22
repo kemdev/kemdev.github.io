@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -11,18 +12,20 @@ export default function Footer() {
       <Container className="h-100">
         <Row className="align-items-center h-100">
           <Col sm={6}>
-            <div className="d-flex align-items-center">
-              <Image
-                src="/img/logo.svg"
-                alt="logo"
-                width={150}
-                height={150}
-              />
-              <div>
-                <p className="m-0 fs-5">Abdulkarim Alarmanazi</p>
-                <p className="m-0 fs-6">Fullstack Web Developer</p>
-              </div>
-            </div>
+            <Link href="/">
+              <a className="d-flex align-items-center navbar-brand">
+                <Image
+                  src="/img/logo.svg"
+                  alt="logo"
+                  width={150}
+                  height={150}
+                />
+                <div>
+                  <p className="m-0 fs-5">Abdulkarim Alarmanazi</p>
+                  <p className="m-0 fs-6">Fullstack Web Developer</p>
+                </div>
+              </a>
+            </Link>
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon text-center">

@@ -34,19 +34,32 @@ const NavbarComp = () => {
     <Navbar expand="lg" className={`${scrolled && "scrolled"} fixed top-0`}>
       <Container>
         <Link href="/">
-          <a className="navbar-brand">
-            <Image src="/img/logo.svg" alt="logo" width={150} height={150} />
+          <a className="navbar-brand" style={{ display: "contents" }}>
+            <Image
+              src="/img/logo.svg"
+              alt="logo"
+              width={150}
+              height={150}
+              style={{ display: "inline-block" }}
+            />
+            <span
+              style={{
+                opacity: scrolled ? 0 : 1,
+                transition: "opacity 0.3s ease-in",
+                display: "inline-block",
+                color: "white",
+              }}
+            >
+              <p className="m-0 fs-6">Abdulkarim Alarmanazi</p>
+              <p
+                className="m-0 "
+                style={{ fontSize: "0.9rem", color: "#9e9e9e" }}
+              >
+                Fullstack Web Developer
+              </p>
+            </span>
           </a>
         </Link>
-        <div
-          style={{
-            opacity: scrolled ? 0 : 1,
-            transition: "opacity 0.3s ease-in",
-          }}
-        >
-          <p className="m-0 fs-6">Abdulkarim Alarmanazi</p>
-          <p className="m-0 fs-6">Fullstack Web Developer</p>
-        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
@@ -98,7 +111,7 @@ const NavbarComp = () => {
               </a>
             </div>
             <Link href="#contact">
-              <button className="vvd" onClick={() => console.log("connect")}>
+              <button className="vvd">
                 <span>Let&apos;s Connect</span>
               </button>
             </Link>
