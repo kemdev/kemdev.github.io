@@ -9,8 +9,7 @@ export default async (req, res) => {
   const name = firstName + ' ' + lastName;
   const msg = {
       to: "abdulkarim.alarmanazi@gmail.com",
-    //   from: email,
-      from: 'abdulkarim.alarmanazi@gmail.com',
+      from: email,
       name,
       subject: "New Message from " + name,
       phone,

@@ -238,7 +238,6 @@
 }
 
 .img-fluid{
-  height: 800px !important;
+  /* height: 800px !important; */
   width: 100%;
-
 }

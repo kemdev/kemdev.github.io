@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 
 import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
 
@@ -34,13 +34,10 @@ export default function ProjectsCard({
         }}
       >
         <div className={`proj-imgbx`}>
-          <Image
+          <img
             src={image}
             alt={name}
-            width="100%"
-            height="80%"
-            layout="responsive"
-            className="img-fluid"
+            style={{ width: "100%", height: "100%" }}
           />
           <div className="proj-txtx">
             <h4>{name}</h4>
