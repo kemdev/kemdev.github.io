@@ -10,6 +10,8 @@ import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
+import SSRProvider from "react-bootstrap/SSRProvider";
+
 export default function Home() {
   const [skillsData, setSkillsData] = useState([]);
   const [general, setGeneral] = useState([]);

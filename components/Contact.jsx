@@ -38,7 +38,6 @@ export default function Contact() {
     }
     return setValidation(true);
   };
-  console.log("Validation", validation);
 
   const handleSubmit = async (data) => {
     try {
@@ -67,6 +66,7 @@ export default function Contact() {
     setStatus({});
     setButtonText("Send");
     setIsHide(false);
+    setValidation({})
   };
 
   useEffect(() => {
