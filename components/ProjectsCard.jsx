@@ -25,14 +25,13 @@ export default function ProjectsCard({
       <motion.div
         className="col-md-6 col-lg-4"
         initial={{ opacity: 0, scale: 0 }}
-        // whileFocus={{ opacity: 1, scale: 1 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        // animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1}}
         transition={{
-          type: "spring",
+          type: "tween",
           stiffness: 100,
           delay: index * 0.1,
+          opacity: { ease: "linear" },
+          ease: [0.17, 0.67, 0.83, 0.67] 
         }}
       >
         <div className={`proj-imgbx`}>
