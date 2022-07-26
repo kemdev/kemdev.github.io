@@ -43,6 +43,7 @@ export default function ProjectsCard({
             style={{ width: "100%", height: "100%" }}
             width= "100%" height= "60%"
             layout="responsive"
+            priority
           />
           <div className="proj-txtx">
             <h4>{name}</h4>
