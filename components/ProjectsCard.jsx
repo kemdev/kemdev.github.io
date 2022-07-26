@@ -20,6 +20,8 @@ export default function ProjectsCard({
   const githubRepo =
     "https://github.com/kemdev/portfolio/tree/main/projects/" + folder + url;
 
+  console.log('image', loadingIMage)
+
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.div
@@ -39,7 +41,7 @@ export default function ProjectsCard({
             src={image}
             alt={name}
             placeholder="blur"
-            blurDataURL={loadingIMage}
+            blurDataURL={loadingIMage.src}
             style={{ width: "100%", height: "100%" }}
             width= "100%" height= "60%"
             layout="responsive"
