@@ -9,7 +9,9 @@ export default function Project({
   replicate,
   general,
   collaborated,
+  threeD,
 }) {
+  console.log('threeD from Project', threeD)
   return (
     <section className="project" id="projects">
       <Container fluid style={{ maxWidth: "2000px" }}>
@@ -42,6 +44,9 @@ export default function Project({
                   <Nav.Link eventKey="replicate">Replicate</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
+                  <Nav.Link eventKey="threeD">3D</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
                   <Nav.Link eventKey="misc">Misc</Nav.Link>
                 </Nav.Item>
               </Nav>
@@ -61,6 +66,11 @@ export default function Project({
                 <Tab.Pane eventKey="misc">
                   <Row>
                     <ProjectContainer projects={general} folder="general/" />
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="threeD">
+                  <Row>
+                    <ProjectContainer projects={threeD} folder="" isExtUrl />
                   </Row>
                 </Tab.Pane>
               </Tab.Content>

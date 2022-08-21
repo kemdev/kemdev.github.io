@@ -155,10 +155,7 @@ export default function Contact() {
                               onFormUpdate("firstName", e.target.value);
                             }}
                             style={{
-                              border:
-                                formDetails.firstName.length === 0 &&
-                                !validation &&
-                                "2px solid red",
+                              border: formDetails.firstName.length === 0 && !validation && "2px solid red" || 'none',
                             }}
                           />
                         </Col>
@@ -174,7 +171,7 @@ export default function Contact() {
                               border:
                                 formDetails.lastName.length === 0 &&
                                 !validation &&
-                                "2px solid red",
+                                "2px solid red" || 'none',
                             }}
                           />
                         </Col>
@@ -191,7 +188,7 @@ export default function Contact() {
                               border:
                                 formDetails.email.length === 0 &&
                                 !validation &&
-                                "2px solid red",
+                                "2px solid red" || 'none',
                             }}
                           />
                         </Col>
@@ -217,7 +214,7 @@ export default function Contact() {
                               border:
                                 formDetails.message.length === 0 &&
                                 !validation &&
-                                "2px solid red",
+                                "2px solid red" || 'none',
                             }}
                           />
                         </Col>

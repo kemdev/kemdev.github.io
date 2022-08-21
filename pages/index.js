@@ -20,6 +20,7 @@ export default function Home() {
   const [highlighted, setHighlighted] = useState([]);
   const [replicate, setReplicate] = useState([]);
   const [collaborated, setCollaborated] = useState([]);
+  const [threeD, setThreeD] = useState([]);
 
   const getData = async (url) => {
     const response = await fetch(`api/${url}`);
@@ -40,6 +41,9 @@ export default function Home() {
       case "collaborated":
         setCollaborated(data);
         break;
+      case "threeD":
+        setThreeD(data);
+        break;
       default:
         break;
     }
@@ -50,6 +54,7 @@ export default function Home() {
     getData("highlighted");
     getData("replicate");
     getData("collaborated");
+    getData("threeD");
     // getData();
   }, []);
 
@@ -57,8 +62,8 @@ export default function Home() {
     <div className={styles.container}>
       <ScrollToTop
         smooth
-        component={<Image src={logo} layout='responsive' />}
-        style={{ background: "#151515",  width: "5rem", height: "5rem" }}
+        component={<Image src={logo} layout="responsive" />}
+        style={{ background: "#151515", width: "5rem", height: "5rem" }}
       />
       <Head>
         <title>Abdulkarim Alarmanazi</title>
@@ -80,6 +85,7 @@ export default function Home() {
             highlighted={highlighted}
             replicate={replicate}
             collaborated={collaborated}
+            threeD={threeD}
           />
         </div>
       </main>
@@ -88,3 +94,4 @@ export default function Home() {
     </div>
   );
 }
+
