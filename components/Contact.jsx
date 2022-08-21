@@ -200,6 +200,9 @@ export default function Contact() {
                             onChange={(e) => {
                               onFormUpdate("phone", e.target.value);
                             }}
+                            style={{
+                              border: 'none',
+                            }}
                           />
                         </Col>
                         <Col sm={12} className="px-1">
