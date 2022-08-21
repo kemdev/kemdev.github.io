@@ -37,7 +37,7 @@
 }
 .contact  input:focus::placeholder,
 .contact  textarea:focus::placeholder {
-  color: #121212;
+  /* color: #121212; */
   opacity: 0.8;
 }
 .contact button {
@@ -94,4 +94,9 @@
 
 .contact input:focus::placeholder {
   color: #fff !important;
+}
+
+.contact input:focus, .contact textarea:focus{
+  background-color: transparent !important;
+  outline: 1px solid #ffffff !important;
 }
