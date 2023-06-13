@@ -24,14 +24,15 @@ export default function ProjectsCard({
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.div
-        className="col-md-6 col-lg-4"
+        className='col-md-6 col-lg-4'
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
         transition={{
-          type: "tween",
+          type: 'tween',
           stiffness: 100,
           delay: index * 0.1,
-          opacity: { ease: "linear" },
+          opacity: { ease: 'linear' },
           ease: [0.17, 0.67, 0.83, 0.67],
         }}
       >
@@ -39,42 +40,42 @@ export default function ProjectsCard({
           <Image
             src={image}
             alt={name}
-            placeholder="blur"
+            placeholder='blur'
             blurDataURL={loadingIMage.src}
-            style={{ width: "100%", height: "100%" }}
-            width="100%"
-            height="60%"
-            layout="responsive"
+            style={{ width: '100%', height: '100%' }}
+            width='100%'
+            height='60%'
+            layout='responsive'
             priority
           />
-          <div className="proj-txtx">
+          <div className='proj-txtx'>
             <h4>{name}</h4>
             <span>{description} </span>
-            <div className="proj-link">
+            <div className='proj-link'>
               <a
                 href={(isExtUrl && url) || githubRepoLink + folder + url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="demoLink"
+                target='_blank'
+                rel='noopener noreferrer'
+                className='demoLink'
               >
                 <div>
                   Live Demo
-                  <span className="icon">
-                    <OpenInNewRoundedIcon fontSize="small" />
+                  <span className='icon'>
+                    <OpenInNewRoundedIcon fontSize='small' />
                   </span>
                 </div>
               </a>
 
               <a
                 href={(isExtUrl && repo) || githubRepo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="repoLink"
+                target='_blank'
+                rel='noopener noreferrer'
+                className='repoLink'
               >
                 <div>
                   Github
-                  <span className="icon">
-                    <OpenInNewRoundedIcon fontSize="small" />
+                  <span className='icon'>
+                    <OpenInNewRoundedIcon fontSize='small' />
                   </span>
                 </div>
               </a>

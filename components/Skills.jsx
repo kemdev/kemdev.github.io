@@ -28,13 +28,13 @@ const Skills = ({ data }) => {
     },
   };
   return (
-    <section className="skill">
+    <section className='skill'>
       <Container>
         <Row>
           <Col>
-            <div className="skill-bx">
+            <div className='skill-bx'>
               <h2>Skills</h2>
-              <div className=" d-flex flex-wrap m-auto justify-content-center">
+              <div className=' d-flex flex-wrap m-auto justify-content-center'>
                 {/* <Carousel
                   itemClass="test"
                   responsive={responsive}
@@ -44,23 +44,21 @@ const Skills = ({ data }) => {
                   rewind
                   rewindWithAnimation
                 > */}
-                
+
                 {data?.map((skill, index) => (
-                  
                   <motion.div
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
                     transition={{
-                      type: "spring",
+                      type: 'spring',
                       stiffness: 100,
-                      delay: index * 0.3,
+                      delay: index * 0.1,
                     }}
                     key={index}
                   >
-                    <div
-                      className="m-5 p-1 d-flex flex-column align-items-center"
-                    >
-                      <h5 className="my-3 display-6">{skill?.name}</h5>
+                    <div className='m-5 p-1 d-flex flex-column align-items-center'>
+                      <h5 className='my-3 display-6'>{skill?.name}</h5>
                       <AnimatedSkillbar
                         value={skill?.value}
                         text={skill?.text}
@@ -75,9 +73,9 @@ const Skills = ({ data }) => {
         </Row>
       </Container>
       <Image
-        className="background-image-left"
-        src="/img/color-sharp.png"
-        alt="Image"
+        className='background-image-left'
+        src='/img/color-sharp.png'
+        alt='Image'
         layout='fill'
       />
     </section>
