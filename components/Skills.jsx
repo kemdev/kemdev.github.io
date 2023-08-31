@@ -35,16 +35,6 @@ const Skills = ({ data }) => {
             <div className='skill-bx'>
               <h2>Skills</h2>
               <div className=' d-flex flex-wrap m-auto justify-content-center'>
-                {/* <Carousel
-                  itemClass="test"
-                  responsive={responsive}
-                  infinit={true}
-                  className="skill-slider"
-                  autoPlay={true}
-                  rewind
-                  rewindWithAnimation
-                > */}
-
                 {data?.map((skill, index) => (
                   <motion.div
                     initial={{ opacity: 0, scale: 0 }}
