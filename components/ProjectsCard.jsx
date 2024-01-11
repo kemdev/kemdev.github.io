@@ -16,8 +16,8 @@ export default function ProjectsCard({
   repo,
   isExtUrl,
 }) {
-  const githubRepoLink = "https://kemdev.github.io/portfolio/projects/";
-  const githubRepo = "https://github.com/kemdev/portfolio/tree/main/projects/" + folder + url;
+  const githubRepoLink = "https://kemdev.github.io/Projects/projects/";
+  const githubRepo = "https://github.com/kemdev/Projects/tree/main/projects/" + folder + url;
 
   // console.log('image', loadingIMage)
 
