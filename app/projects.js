@@ -1,8 +1,9 @@
 export const work = [
   {
     "name": "KarriCoa",
+    "category": "Web apps",
     "type": "Full-stack application",
-    "description": "Find jobs, organize applications and keep track of replies. Export application records as a PDF for the Jobcenter.",
+    "description": "A job-search dashboard for finding openings, tracking applications and replies, and exporting application records as a PDF for the Jobcenter.",
     "tags": [
       "Next.js",
       "TypeScript",
@@ -10,12 +11,24 @@ export const work = [
     ],
     "image": "/work/karricoa.webp",
     "url": "https://karricoa.de/",
-    "linkLabel": "Visit KarriCoa"
+    "linkLabel": "Visit app"
+  },
+  {
+    "name": "Hakaya",
+    "category": "Web apps",
+    "type": "Creative web application",
+    "description": "A multilingual storytelling app that turns a written prompt into a story, characters, and scenes.",
+    "tags": ["Next.js", "TypeScript", "Generative AI"],
+    "image": "/work/hakaya.webp",
+    "alt": "Hakaya’s story creation homepage with a fox looking out over a floating village",
+    "url": "https://story-maker-with-ai.vercel.app/?lang=en",
+    "linkLabel": "Visit Hakaya"
   },
   {
     "name": "Teta Services",
+    "category": "Websites",
     "type": "Business website",
-    "description": "A multilingual site for a cleaning and clearance business serving the Stuttgart region, with a contact flow for service inquiries.",
+    "description": "A service website in German, English and Arabic, with a contact flow for a cleaning and clearance business serving the Stuttgart region.",
     "tags": [
       "Next.js",
       "i18n",
@@ -27,6 +40,7 @@ export const work = [
   },
   {
     "name": "Venn Diagram Generator",
+    "category": "Web apps",
     "type": "Data visualization",
     "description": "Compare up to six sets, enter data manually or import a CSV, and export the diagram as a PDF or PNG.",
     "tags": [
@@ -39,6 +53,7 @@ export const work = [
   },
   {
     "name": "NextIn",
+    "category": "Web apps",
     "type": "Collaborative project",
     "description": "A job-search organizer built with my classmates as our full-stack graduation project.",
     "tags": [
@@ -51,6 +66,7 @@ export const work = [
   },
   {
     "name": "jobsuche-api-js",
+    "category": "Developer tools",
     "type": "Open-source developer tool",
     "description": "A JavaScript client for searching the Bundesagentur für Arbeit job listings and fetching job details.",
     "tags": [
@@ -63,6 +79,7 @@ export const work = [
   },
   {
     "name": "Previous portfolio",
+    "category": "Websites",
     "type": "Portfolio archive",
     "description": "My earlier portfolio, built in Next.js with animated sections and a gallery of web-development projects.",
     "tags": [
